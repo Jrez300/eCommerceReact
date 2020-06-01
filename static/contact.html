@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="../static/styles/contact.css">
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans+Condensed:300&display=swap" rel="stylesheet">
+    <script src="../static/javascript/contact.js"></script>
+    <title>Product Page</title>
+</head>
+
+<body>
+    <div class="container">
+        <header class="logo">
+            <img src="../src/images/logo.png" alt="logo">
+            <p>YEE<span style='color:#EB0E0E'>Ƶ</span>Y KICKS</p>
+
+        </header>
+        <nav class="navbar">
+            <ul>
+                <li><a href="../static/index.html">Home</a></li>
+                <li><a href="/static/product.html">Products</a></li>
+                <li><a href="contact.html">Contact Us</a></li>
+            </ul>
+        </nav>
+        <figure class=search><label for="input"><input type="text" id="input" class="searchTerm"
+                    placeholder="Need Help?"></label><img src="../src/images/shoppingcart.png" alt="cart"></figure>
+
+    </div>
+    <div class="container2">
+        <figure class="contactformContainer">
+
+            <h1 class=header>Contact Us.</h1>
+
+            <div id="error"></div>
+
+            <form class="contactform" onsubmit="return validation()">
+
+                <label for="fname">First Name</label>
+                <input type="text" id="fname" name="firstname" placeholder="Your name..">
+
+                <label for="lname">Last Name</label>
+                <input type="text" id="lname" name="lastname" placeholder="Your last name..">
+
+                <label for="pnumber">Phone Number</label>
+                <input type="text" id="pnumber" name="phonenumber" placeholder="Your phone number..">
+
+                <label for="email">E-mail</label>
+                <input type="text" id="email" name="email" placeholder="Your E-mail..">
+
+
+                <label for="subject">Message us</label>
+                <textarea id="subject" name="subject" placeholder="Write something.." style="height:200px"></textarea>
+
+                <div class="button">
+                    <input type="submit">
+                </div>
+
+
+            </form>
+
+        </figure>
+
+
+
+        <footer class="footer">
+            <nav class="footernav">
+                <ul>
+
+                    <li><a href="https://www.facebook.com/adidasyeezy/"><img src="../src/images/Facebook.webp" alt="fb"></a>
+                    </li>
+                    <li><a href="https://www.instagram.com/yeezymafia/?hl=en"><img src="../src/images/ig.webp" alt="ig"></a>
+                    </li>
+                    <li><a
+                            href="https://twitter.com/theyeezymafia?ref_src=twsrc%5Egoogle%7Ctwcamp%5Eserp%7Ctwgr%5Eauthor"><img
+                                src="../src/images/twitter.webp" alt="twitter"></a></li>
+                </ul>
+                <p>&copy; All Rights Reserved </p>
+            </nav>
+        </footer>
+
+    </div>
+
+
+</body>
+
+</html>

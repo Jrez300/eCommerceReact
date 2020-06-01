@@ -1,0 +1,711 @@
+html,
+    body {
+        max-width: 800px;
+        width: 800px;
+        font-family: "Montserrat", sans-serif;
+        margin: 0;
+        background-color: black;
+        /*background-color: #EFEEED;*/
+      }
+
+      .container {
+        max-width: 800px;
+        display: grid;
+        grid-template-columns:  1fr 1fr 1fr 1fr ;
+        grid-template-rows: 80px 60px 30px 60px 80px 100px;
+        grid-template-areas:
+        "logo . . search " /*60px*/
+        "navbar navbar navbar navbar"
+        ". header header ."
+        ". . . ."
+        "filters filters filters filters "
+        "price-filters price-filters price-filters price-filters"
+        " . . . . " /*100px*/
+        ;
+        justify-items: center;
+        color: #BFBDB3;
+    }
+  
+    .posts {
+        max-width: 800px;
+        display: grid;
+        grid-template-columns:  400px 400px ;
+        justify-items: center;
+        color: #BFBDB3;
+    }
+    
+    
+      .logo {
+        max-width: 235px;
+        grid-area: logo;
+        align-items: center;
+        display: grid;
+        grid-template-areas: 
+        "icon yeezy";
+        
+        
+    }
+    .logo img{
+        height: 60px;
+        grid-area: icon;
+        margin: 0px;
+    }
+    
+    .logo p {
+        font-size: 30px;
+        font-weight: bold;
+        color: #BFBDB3;
+        margin: 0;    
+        grid-area: yeezy;
+        
+    }
+    
+    .navbar {
+        grid-area: navbar;
+        justify-self: center;
+    
+    }
+    
+    .navbar ul {
+      list-style-type: none;
+      margin: 0;
+      padding:0px;
+      text-align: center;
+    }
+    
+    .navbar li {
+      display: inline-block;
+      font-size: 22px;
+      font-weight: bold;
+      margin: 0px;
+      padding-left: 10px;
+      padding-right: 10px;
+      
+    }
+    .navbar a:hover {
+        text-decoration: underline #D3212D;
+    
+    
+      }
+    
+    .navbar a {
+        color: #BFBDB3;
+      text-decoration: none;
+      transition-duration: 0.5s;
+    
+    }
+    
+    
+
+
+    .search {
+        max-width: 150px;
+        grid-area:search;
+        display: grid;
+        grid-template-areas: 
+        "searchbar cart";
+    }
+    
+    .searchTerm {
+        max-width: 100px;
+        width: 110px;
+        padding: 5px;
+        height: 20px;
+        margin-right: 15px;
+        grid-area: searchbar;
+      }
+    
+    
+    
+    .search img {
+        grid-area: cart;
+        height:25px;
+    }
+    
+   .header {
+       grid-area: header;
+       text-align: center;
+       font-size: 30px;
+       color: #EB0E0E;
+   }
+    
+     .shoebox1 {
+          display: grid;
+          grid-area: content1;
+          text-align: center;
+          grid-template-rows: 150px 50px 70px 20px;
+
+          grid-template-areas: 
+        
+          "img"
+          "title"  
+          "info"
+          "price"
+          "button";
+          padding-bottom: 20px;
+      }
+       .shoebox2 {
+        display: grid;
+        grid-area: content2;
+        text-align: center;
+        grid-template-rows: 150px 50px 70px 20px;
+
+        grid-template-areas: 
+        "img"
+        "title"
+        "info"
+        "price"
+        "button";
+    }
+     .shoebox3 {
+        display: grid;
+        grid-area: content3;
+        text-align: center;
+        grid-template-rows: 150px 50px 70px 20px;
+
+        grid-template-areas: 
+        "img"
+        "title"
+        "info"
+        "price"
+        "button";
+    }
+     .shoebox4 {
+        display: grid;
+        grid-area: content4;
+        text-align: center;
+        grid-template-rows: 150px 50px 70px 20px;
+
+        grid-template-areas: 
+        "img"
+        "title"
+        "info"
+        "price"
+        "button";
+    }
+     .shoebox5 {
+        display: grid;
+        grid-area: content5;
+        text-align: center;
+        grid-template-rows: 150px 50px 70px 20px;
+
+        grid-template-areas: 
+        "img"
+        "title"
+        "info"
+        "price"
+        "button";
+    }
+     .shoebox6 {
+        display: grid;
+        grid-area: content6;
+        text-align: center;
+        grid-template-rows: 150px 50px 70px 20px;
+
+        grid-template-areas: 
+        "img"
+        "title"
+        "info"
+        "price"
+        "button";
+        ;
+    }
+     .shoebox7 {
+        display: grid;
+        grid-area: content7;
+        text-align: center;
+        grid-template-rows: 150px 50px 70px 20px;
+
+        grid-template-areas: 
+        "img"
+        "title"
+        "info"
+        "price"
+        "button";
+        
+    }
+   
+     .shoebox8 {
+        display: grid;
+        grid-area: content8;
+        text-align: center;
+        grid-template-rows: 150px 50px 70px 20px;
+        grid-template-areas: 
+        "img"
+        "title"
+        "info"
+        "price"
+        "button";
+    }
+
+     
+    
+     .shoebox9 {
+          display: grid;
+          grid-area: content9;
+          text-align: center;
+          grid-template-rows: 150px 50px 70px 20px;
+
+          grid-template-areas: 
+        
+          "img"
+          "title"  
+          "info"
+          "price"
+          "button";
+      }
+       .shoebox10 {
+        display: grid;
+        grid-area: content10;
+        text-align: center;
+        grid-template-rows: 150px 50px 70px 20px;
+
+        grid-template-areas: 
+        "img"
+        "title"
+        "info"
+        "price"
+        "button";
+    }
+     .shoebox11 {
+        display: grid;
+        grid-area: content11;
+        text-align: center;
+        grid-template-rows: 150px 50px 70px 20px;
+
+        grid-template-areas: 
+        "img"
+        "title"
+        "info"
+        "price"
+        "button";
+    }
+     .shoebox12 {
+        display: grid;
+        grid-area: content12;
+        text-align: center;
+        grid-template-rows: 150px 50px 70px 20px;
+
+        grid-template-areas: 
+        "img"
+        "title"
+        "info"
+        "price"
+        "button";
+    }
+     .shoebox13 {
+        display: grid;
+        grid-area: content13;
+        text-align: center;
+        grid-template-rows: 150px 50px 70px 20px;
+
+        grid-template-areas: 
+        "img"
+        "title"
+        "info"
+        "price"
+        "button";
+    }
+     .shoebox14 {
+        display: grid;
+        grid-area: content14;
+        text-align: center;
+        grid-template-rows: 150px 50px 70px 20px;
+
+        grid-template-areas: 
+        "img"
+        "title"
+        "info"
+        "price"
+        "button";
+    }
+     .shoebox15 {
+        display: grid;
+        grid-area: content15;
+        text-align: center;
+        grid-template-rows: 150px 50px 70px 20px;
+
+        grid-template-areas: 
+        "img"
+        "title"
+        "info"
+        "price"
+        "button";
+        
+    }
+   
+     .shoebox16 {
+        display: grid;
+        grid-area: content16;
+        text-align: center;
+        grid-template-rows: 150px 50px 70px 20px;
+        grid-template-areas: 
+        "img"
+        "title"
+        "info"
+        "price"
+        "button";
+    }
+    
+    
+
+     .shoebox17 {
+          display: grid;
+          grid-area: content17;
+          text-align: center;
+          grid-template-rows: 150px 50px 70px 20px;
+
+          grid-template-areas: 
+        
+          "img"
+          "title"  
+          "info"
+          "price"
+          "button";
+      }
+        .shoebox18 {
+        display: grid;
+        grid-area: content18;
+        text-align: center;
+        grid-template-rows: 150px 50px 70px 20px;
+
+        grid-template-areas: 
+        "img"
+        "title"
+        "info"
+        "price"
+        "button";
+    }
+     .shoebox19 {
+        display: grid;
+        grid-area: content19;
+        text-align: center;
+        grid-template-rows: 150px 50px 70px 20px;
+
+        grid-template-areas: 
+        "img"
+        "title"
+        "info"
+        "price"
+        "button";
+    }
+      .shoebox20 {
+        display: grid;
+        grid-area: content20;
+        text-align: center;
+        grid-template-rows: 150px 50px 70px 20px;
+
+        grid-template-areas: 
+        "img"
+        "title"
+        "info"
+        "price"
+        "button";
+    }
+      .shoebox21 {
+        display: grid;
+        grid-area: content21;
+        text-align: center;
+        grid-template-rows: 150px 50px 70px 20px;
+
+        grid-template-areas: 
+        "img"
+        "title"
+        "info"
+        "price"
+        "button";
+    }
+     .shoebox22 {
+        display: grid;
+        grid-area: content22;
+        text-align: center;
+        grid-template-rows: 150px 50px 70px 20px;
+
+        grid-template-areas: 
+        "img"
+        "title"
+        "info"
+        "price"
+        "button";
+    }
+     .shoebox23 {
+        display: grid;
+        grid-area: content23;
+        text-align: center;
+        grid-template-rows: 150px 50px 70px 20px;
+
+        grid-template-areas: 
+        "img"
+        "title"
+        "info"
+        "price"
+        "button";
+        
+    }
+   
+    .shoebox24 {
+        display: grid;
+        grid-area: content24;
+        text-align: center;
+        grid-template-rows: 150px 50px 70px 20px;
+        grid-template-areas: 
+        "img"
+        "title"
+        "info"
+        "price"
+        "button";
+    }
+    
+
+    .shoeimg {
+        width: 200px;
+        grid-area: img;
+        justify-self: center;
+        }
+      
+    
+      .title {
+          text-align: center;
+          font-size: 15px;
+          font-weight: bold;
+          grid-area: title;
+       
+         
+          
+      }
+      .info {
+          font-size: 15px;
+          font-style: italic;
+          align-items: center;
+          grid-area: info;
+          width: 250px;
+          
+          
+          
+      }
+    
+      .price {
+          display: grid;
+          text-align: center;
+          font-size: 15px;
+          font-weight: bold;
+          margin-bottom: 20px;
+        align-self: center;
+        color: #EB0E0E;
+        grid-area: price;
+          
+      }
+    .newArrival {
+        color: #EB0E0E;
+        
+    }
+    
+    .button {
+        text-align: center;
+        text-decoration: none;
+        padding: 10px;
+        font-size: 10px;
+        border-radius: 12px;
+        font-weight: bold;
+        justify-self: center;
+        grid-area: button;
+        transition-duration: 0.5s;
+        
+        color:#BFBDB3;
+        border: 2px solid #EB0E0E;
+       margin-top: 20px;
+    }
+    .button:hover {
+        background-color: #EB0E0E; /* Green */
+        color: white;
+    }
+
+
+.footer {
+    grid-area: footer;
+    padding-bottom: 50px;
+    text-align: center;
+}
+
+.footer p{
+    color: white;
+    margin-bottom: 20px;
+
+}
+
+.footer img {
+    width: 40px;
+}
+
+
+.footernav ul {
+  list-style-type: none;
+  margin: 0;
+  padding-top:30px;
+  text-align: center;
+}
+
+.footernav li {
+  display: inline-block;
+  font-size: 22px;
+  font-weight: bold;
+  margin: 10px;
+  padding-left: 30px;
+  padding-right: 30px;
+  
+}
+.footernav a:hover {
+    text-decoration: underline #D3212D;
+
+
+  }
+
+.footernav a {
+    color: #BFBDB3;
+  text-decoration: none;
+}
+
+input[type="radio"] {  /*Hides radio buttons*/
+    position: absolute;
+    left: -9999px;
+}
+
+ol {
+    list-style: none;
+    padding:0px;
+}
+
+  .filters{
+      text-align: center;
+      grid-area: filters;
+    
+  }
+  
+/* all element selector */
+.filters * { 
+    display: inline-block;
+    text-align: center;
+}
+.filters label {
+padding: 8px 16px;
+  margin-bottom: 0px;
+  border-radius: 2rem;
+  min-width: 50px;
+  cursor: pointer;
+  transition: all 0.5s;
+}
+.filters label:hover {
+    background: #EB0E0E;
+    color: #1a1a1a;
+  }
+
+
+.price-filters{
+    text-align: center;
+    grid-area: price-filters;
+  }
+  
+  .price-filters * { 
+  display: inline-block;
+  text-align: center;
+  font-size: 18px;
+  }
+  .price-filters label {
+    padding: 8px 16px;
+    margin-bottom: 0px;
+    border-radius: 2rem;
+    min-width: 50px;
+    cursor: pointer;
+    transition: all 0.5s;
+  }
+  .price-filters label:hover {
+  background: #EB0E0E;
+  color: #1a1a1a;
+  }
+  
+  
+/* When clicked the All filter, all posts that have a data-category attribute will appear: */
+[value="All"]:checked ~ .posts [data-category] {
+    display: block;
+}
+ /* When clicking on any filter category, only the target posts will be visible: */
+  /* then checks if the radio button is clicked/checked, ~ looks for the the child that share the same parent, display none is applied to those that do NOT have the specified category */
+  [value="Yeezy 350"]:checked ~ .posts .post:not([data-category*="Yeezy 350"]),
+  [value="Yeezy 500"]:checked ~ .posts .post:not([data-category*="Yeezy 500"]),
+  [value="Yeezy 700"]:checked ~ .posts .post:not([data-category*="Yeezy 700"]) ,
+  [value="$0-$200"]:checked ~ .posts .post:not([data-category2*="$0-$200"]),
+  [value="$200-$300"]:checked ~ .posts .post:not([data-category2*="$200-$300"]),
+  [value="$300-$400"]:checked ~ .posts .post:not([data-category2*="$300-$400"]),
+  [value="$400+"]:checked ~ .posts .post:not([data-category2*="$400+"]) 
+  {
+    display: none;
+  }
+  
+@media only screen and (min-width: 800px)  {
+    html,
+    body {
+        max-width: 1700px;
+        width: 100%;
+        font-family: "Montserrat", sans-serif;
+        margin: 0;
+        background-color: black;
+    }
+    .container {
+        width: 100%;
+        max-width: 1700px;
+        min-width: 900px;
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr 1fr ;
+        grid-template-rows: 60px 60px 90px  80px 80px 100px;
+        grid-template-areas:
+        "logo navbar navbar search" /*60px*/
+        ". . . . " 
+        ". header header ."
+        " . filters filters ."
+        " . price-filters price-filters ."
+        ". . . . " /*100px*/
+        ;
+        justify-items: center;
+        color: #BFBDB3;
+        margin-left:auto;
+        margin-right:auto;
+    }
+  
+    .posts {
+        max-width: 1700px;
+        min-width: 900px;
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+        margin: 0px;
+        justify-items: center;
+        color: #BFBDB3;
+        margin-bottom: 50px;
+    }
+    
+
+    
+    .navbar ul {
+        list-style-type: none;
+        margin: 0;
+        padding-top:30px;
+        text-align: center;
+      }
+      .navbar li {
+        display: inline-block;
+        font-size: 22px;
+        font-weight: bold;
+        margin: 0px;
+        padding-left: 15px;
+        padding-right: 15px;
+        
+      }
+      .searchTerm {
+        min-width: 110px;
+        max-width: 110px;
+        width: 110px;
+        padding: 5px;
+        height: 20px;
+        grid-area: searchbar;
+      }
+
+}

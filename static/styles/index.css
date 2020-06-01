@@ -1,0 +1,335 @@
+html,
+ body {
+  max-width: 800px;
+  width: 800px;
+  font-family: "Montserrat", sans-serif;
+  margin: 0;
+  background-color: black;
+  /*background-color: #EFEEED;*/
+}
+ .container {
+    max-width: 800px;
+     width: 100%;
+     display: grid;
+     grid-template-columns: 1fr 1fr 1fr 1fr ;
+        grid-template-rows: 80px 80px 80px ;
+        grid-template-areas: 
+        "logo . . search " /*60px*/
+        "navbar navbar navbar navbar"
+        "shipping shipping shipping shipping"
+        ;
+        justify-items: center;
+        color: #BFBDB3;
+        
+ }
+ .container2 {
+  max-width: 800px;
+   width: 100%;
+   display: grid;
+   grid-template-columns: 1fr 1fr 1fr 1fr ;
+      grid-template-rows:  300px 150px 550px 700px 100px;
+      grid-template-areas: 
+     
+      ". hero hero ."
+      ". statement statement ."
+      ". new new ."
+      ". weekpicks weekpicks ."
+      ". footer footer .";
+      justify-items: center;
+      color: #BFBDB3;
+      
+}
+
+ .logo {
+    max-width: 235px;
+      grid-area: logo;
+      align-items: center;
+      display: grid;
+      grid-template-areas: 
+      "icon yeezy";
+      
+      
+  }
+  .logo img{
+      height: 60px;
+      grid-area: icon;
+      margin: 0px;
+  }
+  
+  .logo p {
+      font-size: 30px;
+      font-weight: bold;
+      color: #BFBDB3;
+      margin: 0;    
+      grid-area: yeezy;
+      
+  }
+  
+  .navbar {
+      grid-area: navbar;
+  }
+  
+  .navbar ul {
+    list-style-type: none;
+    margin: 0;
+    padding-top:30px;
+    text-align: center;
+  }
+  
+  .navbar li {
+    display: inline-block;
+    font-size: 22px;
+    font-weight: bold;
+    margin: 0px;
+    padding-right: 10px;
+    padding-left: 10px;
+    
+  }
+  .navbar a:hover {
+      text-decoration: underline #EB0E0E;
+  
+  
+    }
+  
+  .navbar a {
+      color: #BFBDB3;
+    text-decoration: none;
+    transition-duration: 0.5s;
+  
+  }
+  
+.shipping h1{
+    font-weight: bold;
+    font-size: 16px;
+  }
+.shipping {
+    grid-area: shipping;
+    color: white;
+    font-weight: bold;
+    font-size: 16px;
+    text-align: center;
+}
+
+.hero {
+    grid-area: hero;
+}
+.hero img {
+    width: 600px;
+    height:350px;
+}
+
+.statement h2 {
+  font-weight: bold;
+  line-height: 25px;
+  font-size: 16px;
+}
+.statement {
+    grid-area: statement;
+    color: #EB0E0E;
+    text-align: center;
+    width: 570px;
+}
+
+.new {
+    grid-area: new;
+    color: #BFBDB3;
+    text-align: center;
+}
+
+.new img{
+    width: 500px;
+}
+.weekpicks {
+    display: grid;
+    grid-area:weekpicks;
+    grid-template-areas:
+    "featured featured featured featured"
+    "pic3 pic3 pic4 pic4"  
+    ". pic5 pic5 .";
+    color: #BFBDB3;
+    text-align: center;
+    width: 800px;
+}
+
+
+.featured {
+  width: 100%;
+}
+
+.featured {
+    grid-area: featured;
+}
+.pic3 {
+    grid-area: pic3;
+}
+.pic4 {
+    grid-area: pic4;
+}
+.pic5 {
+    grid-area: pic5;
+}
+
+.weekpicks img {
+    width: 300px;
+}
+  
+  .search {
+    max-width: 150px;
+      grid-area:search;
+      display: grid;
+      grid-template-areas: 
+      "searchbar cart";
+  }
+  
+  .searchTerm {
+      max-width: 100px;
+      width: 100px;
+      padding: 5px;
+      height: 20px;
+      margin-right: 15px;
+      grid-area: searchbar;
+      
+    }
+  
+  
+  .search img {
+      grid-area: cart;
+      height:25px;
+  }
+  .footer {
+    grid-area: footer;
+    padding-bottom: 50px;
+    text-align: center;
+    justify-self: center;
+}
+
+.footer p{
+    color: white;
+    margin-bottom: 20px;
+
+}
+
+.footer img {
+    width: 40px;
+}
+
+
+.footernav ul {
+  list-style-type: none;
+  margin: 0;
+  padding-top:0px;
+  padding: 0px;
+  text-align: center;
+}
+
+.footernav li {
+  display: inline-block;
+  font-size: 22px;
+  font-weight: bold;
+  margin-top: 20px;
+  padding-left: 20px;
+  padding-right: 20px;
+  
+}
+.footernav a:hover {
+    text-decoration: underline #EB0E0E;
+
+
+  }
+
+.footernav a {
+    color: #BFBDB3;
+  text-decoration: none;
+  
+}
+
+@media only screen and (min-width: 800px) {
+    html,
+    body {
+        max-width: 1700px;
+        width: 100%;
+        font-family: "Montserrat", sans-serif;
+        margin: 0;
+        background-color: black;
+       
+    }
+    .container {
+        width: 100%;
+        max-width: 1700px;
+        min-width: 900px;
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr 1fr ;
+        grid-template-rows: 60px 80px 50px ;
+        grid-template-areas: 
+        "logo navbar navbar search" 
+        ". . . ."
+        ". shipping shipping ."
+        ;
+        justify-items: center;
+        color: #BFBDB3;
+        margin-left:auto;
+        margin-right:auto;
+    }
+    .container2 {
+      width: 100%;
+      max-width: 1700px;
+      min-width: 900px;
+      display: grid;
+      grid-template-columns: 1fr 1fr 1fr 1fr ;
+      grid-template-rows: 300px 150px 550px 400px 100px;
+      grid-template-areas: 
+      
+      ". hero hero ."
+      ". statement statement ."
+      ". new new ."
+      "weekpicks weekpicks weekpicks weekpicks"
+      ". footer footer .";
+      justify-items: center;
+      color: #BFBDB3;
+      margin-left:auto;
+      margin-right:auto;
+  }
+    .navbar ul {
+        list-style-type: none;
+        margin: 0;
+        padding-top:30px;
+        text-align: center;
+      }
+
+    .navbar li {
+        display: inline-block;
+        font-size: 22px;
+        font-weight: bold;
+        margin: 0px;
+        padding-left: 15px;
+        padding-right: 15px;
+        
+      }
+      .searchTerm {
+        min-width: 110px;
+        max-width: 110px;
+        width: 110px;
+        padding: 5px;
+        height: 20px;
+        grid-area: searchbar;
+      }
+    .weekpicks {
+    display: grid;
+    grid-area:weekpicks;
+    grid-template-areas:
+    ". featured ."
+    "pic3 pic4 pic5";
+    color: #BFBDB3;
+    text-align: center;
+    width: 100%;
+    }
+    .statement {
+      grid-area: statement;
+      color: #EB0E0E;
+      font-weight: bold;
+      line-height: 25px;
+      text-align: center;
+  }
+
+} 
+ 

@@ -1,0 +1,380 @@
+html,
+    body {
+        width: 775px;
+        font-family: "Montserrat", sans-serif;
+        margin: 0;
+        background-color: black;
+        /*background-color: #EFEEED;*/
+      }
+    .container {
+        width: 800px;
+        width: 100%;
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+        grid-template-rows: 80px 80px ;
+        grid-template-areas: 
+        "logo . . search "
+        "navbar navbar navbar navbar"
+        
+    }
+    .container2 {
+      width: 800px;
+      display: grid;
+      grid-template-columns: 1fr 1fr 1fr 1fr;
+      grid-template-rows: 750px 150px ;
+      grid-template-areas: 
+      " . contactform contactform . "
+      "footer footer footer footer"
+  }
+
+.logo {
+  max-width: 235px;
+    grid-area: logo;
+    align-items: center;
+    display: grid;
+    grid-template-areas: 
+    "icon yeezy";
+    
+    
+}
+.logo img{
+    height: 60px;
+    grid-area: icon;
+    margin: 0px;
+}
+
+.logo p {
+    font-size: 30px;
+    font-weight: bold;
+    color: #BFBDB3;
+    margin: 0;    
+    grid-area: yeezy;
+    
+}
+
+.navbar {
+    grid-area: navbar;
+}
+
+.navbar ul {
+  list-style-type: none;
+  margin: 0;
+  padding-top:30px;
+  text-align: center;
+}
+
+.navbar li {
+  display: inline-block;
+  font-size: 22px;
+  font-weight: bold;
+  margin: 0px;
+  padding-right: 10px;
+  padding-left: 10px;
+  
+}
+.navbar a:hover {
+    text-decoration: underline #D3212D;
+
+
+  }
+
+.navbar a {
+    color: #BFBDB3;
+  text-decoration: none;
+  transition-duration: 0.5s;
+
+}
+
+
+
+.search {
+  max-width: 150px;
+    grid-area:search;
+    display: grid;
+    grid-template-areas: 
+    "searchbar cart";
+}
+
+.searchTerm {
+    max-width: 100px;
+    width: 100px;
+    padding: 5px;
+    height: 20px;
+    margin-right: 15px;
+    grid-area: searchbar;
+    
+  }
+
+
+.search img {
+    grid-area: cart;
+    height:25px;
+}
+
+.contactformContainer {
+    grid-area: contactform;
+    width: 400px;
+    align-self: center;
+    /* max-width: 800px; */
+    
+}
+
+  .header {
+    text-align: center;
+    margin-bottom:30px;
+    width:100%;
+    color: #BFBDB3;
+    font-size: 40px;
+    
+  }
+  
+  .contactform {
+    max-width: 500px;
+    width:100%;
+    color: #BFBDB3;
+   align-items: center;
+    font-weight: bold;
+    display: grid;
+    
+
+  }
+
+  #error {
+    margin-bottom: 20px;
+    padding: 0px;
+    background: #EB0E0E;
+    color: black;
+    font-weight: bold;
+    text-align: center;
+    font-size: 15px;
+    transition: all 0.5s ease;
+  }
+ 
+  .contactform input, select, textarea {
+      background-color: #BFBDB3;
+    width: 100%;
+    padding: 10px;  
+    box-sizing: border-box; 
+    margin-top: 5px; 
+    margin-bottom: 15px; 
+    resize: vertical; 
+  }
+  
+ .button {
+   text-align: center;  }
+
+  .button input[type="submit"]{
+        border: 0;
+        margin-top: 15px;
+        padding: 10px;
+        background: #BFBDB3;
+        color:black;
+        text-transform: uppercase;
+        letter-spacing: 5px;
+        font-weight: bold;
+        border-radius: 25px;
+        cursor: pointer;
+        width: 50%;
+        
+        
+        
+  }
+    .button input[type="submit"]:hover {
+        background-color: #EB0E0E; 
+        color: black;
+        border-radius: 25px;
+        transition-duration: 0.5s;
+        
+    }
+  
+  
+  
+
+.footer {
+    grid-area: footer;
+    padding-bottom: 50px;
+    text-align: center;
+    justify-self: center;
+}
+
+.footer p{
+    color: white;
+    margin-bottom: 20px;
+
+}
+
+.footer img {
+    width: 40px;
+}
+
+
+.footernav ul {
+  list-style-type: none;
+  margin: 0;
+  padding-top:0px;
+  padding: 0px;
+  text-align: center;
+}
+
+.footernav li {
+  display: inline-block;
+  font-size: 22px;
+  font-weight: bold;
+  margin-top: 20px;
+  padding-left: 20px;
+  padding-right: 20px;
+  
+}
+.footernav a:hover {
+    text-decoration: underline #D3212D;
+
+
+  }
+
+.footernav a {
+    color: #BFBDB3;
+  text-decoration: none;
+  
+}
+
+@media only screen and (min-width: 800px) {
+    html,
+    body {
+       max-width: 1700px;
+        width: 100%;
+        font-family: "Montserrat", sans-serif;
+        margin: 0;
+        background-color: black;
+       
+    }
+    .container {
+      width: 100%;
+      max-width: 1700px;
+      min-width: 900px;
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr 1fr ;
+        grid-template-rows: 60px 40px  ;
+        grid-template-areas: 
+        "logo navbar navbar search"
+        ". . . ."
+        ;
+        justify-items: center;
+        color: #BFBDB3;
+        margin-left:auto;
+        margin-right:auto;
+    
+    }
+
+    .container2 {
+      width: 100%;
+        max-width: 1700px;
+        min-width: 900px;
+      display: grid;
+      grid-template-columns: 1fr 1fr 1fr 1fr ;
+      grid-template-rows:  800px 100px ;
+      grid-template-areas: 
+      
+      ". contactform contactform ."
+      "footer footer footer footer";
+      justify-items: center;
+      color: #BFBDB3;
+      margin-left:auto;
+      margin-right:auto;
+  
+  }
+    .navbar ul {
+        list-style-type: none;
+        margin: 0;
+        padding-top:30px;
+        text-align: center;
+      }
+
+    .navbar li {
+        display: inline-block;
+        font-size: 22px;
+        font-weight: bold;
+        margin: 0px;
+        padding-left: 15px;
+        padding-right: 15px;
+        
+      }
+      .searchTerm {
+          min-width: 110px;
+        width: 110px;
+        padding: 5px;
+        height: 20px;
+        grid-area: searchbar;
+      }
+    
+.footernav li {
+    display: inline-block;
+    font-size: 22px;
+    font-weight: bold;
+    margin: 10px;
+    padding-left: 30px;
+    padding-right: 30px;
+    
+  }
+
+}
+
+@media only screen and (max-width: 400px) {
+  html,
+  body {
+    max-width: 400px;
+      width: 100%;
+      font-family: "Montserrat", sans-serif;
+      margin: 0;
+      background-color: black;
+     
+  }
+
+  .container {
+    width: 100%;
+    max-width: 400px;
+    
+      display: grid;
+      grid-template-columns: 1fr 1fr 1fr 1fr ;
+      grid-template-rows: 90px 70px 10px  ;
+      grid-template-areas: 
+      "logo . . search"
+      "navbar navbar navbar navbar"
+      ". . . ."
+      ;
+      justify-items: center;
+      color: #BFBDB3;
+      margin-left:auto;
+      margin-right:auto;
+  
+  }
+
+  .container2 {
+    width: 100%;
+    max-width: 400px;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+    grid-template-rows:  800px 100px ;
+    grid-template-areas: 
+    
+    ". . contactform . ."
+    "footer footer footer footer footer";
+    justify-items: center;
+    color: #BFBDB3;
+    margin-left:auto;
+    margin-right:auto;
+
+}
+.contactformContainer {
+  grid-area: contactform;
+  max-width: 240px;
+  align-items: center;
+  
+}
+.navbar {
+  width: 400px;
+  grid-area: navbar;
+}
+
+
+}
+

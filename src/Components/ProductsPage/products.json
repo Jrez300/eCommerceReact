@@ -1,0 +1,244 @@
+
+ [
+        {
+            "title": "Adidas Yeezy Boost 350 V2 Cinder",
+            "cover": "./images/cinder1.png",
+            "description": "Classic black colorway, gum bottom",
+            "price": "$290",
+            "priceCategory": "$200-$300",
+            "category": "Yeezy 350",
+            "id": "shoebox1",
+            "url":"https://stockx.com/adidas-yeezy-boost-350-v2-cinder"
+        },
+        {
+            "title": "Adidas Yeezy Boost 350 V2 Earth",
+            "cover": "./images/earth.png",
+            "description": "Mud Primeknit colorway",
+            "price": "$270",
+            "priceCategory": "$200-$300",
+            "category": "Yeezy 350",
+            "id": "shoebox2",
+            "url": "https://stockx.com/adidas-yeezy-boost-350-v2-earth"
+        },
+        {
+            "title": "Adidas Yeezy Boost 350 V2 Desert Sage",
+            "cover": "./images/desert.png",
+            "description": "Desert Sage Primeknit colorway, gum sole",
+            "price": "$270",
+            "priceCategory": "$200-$300",
+            "category": "Yeezy 350",
+            "id": "shoebox3",
+            "url": "https://stockx.com/adidas-yeezy-boost-350-v2-desert-sage"
+        },
+        {
+            "title": "Adidas Yeezy Boost 350 V2 Tail Light",
+            "cover": "./images/tail.png",
+            "description": "Grey Primeknit orange hint colorway.",
+            "price": "$300",
+            "priceCategory": "$300-$400",
+            "category": "Yeezy 350",
+            "id": "shoebox4",
+            "url": "https://stockx.com/adidas-yeezy-boost-350-v2-tail-light"
+        },
+        {
+            "title": "Adidas Yeezy Boost 350 V2 static",
+            "cover": "./images/static.png",
+            "description": "Electric static white colorway",
+            "price": "$350",
+            "priceCategory": "$300-$400",
+            "category": "Yeezy 350",
+            "id": "shoebox5",
+            "url": "https://stockx.com/adidas-yeezy-boost-350-v2-static"
+        },
+        {
+            "title": "Adidas Yeezy Boost 350 V2 Beluga 2.0",
+            "cover": "./images/bel.png",
+            "description": "Grey, bold orange colorway",
+            "price": "$500",
+            "priceCategory": "$400+",
+            "category": "Yeezy 350",
+            "id": "shoebox6",
+            "url": "https://stockx.com/adidas-yeezy-boost-350-v2-beluga-2-0"
+        },
+        {
+            "title": "Adidas Yeezy Boost 350 V2 Zebra",
+            "cover": "./images/zeb.png",
+            "description": "Classic white, black and red colorway",
+            "price": "$290",
+            "priceCategory": "$200-$300",
+            "category": "Yeezy 350",
+            "id": "shoebox7",
+            "url": "https://stockx.com/adidas-yeezy-boost-350-v2-white-core-black-red"
+        },
+        {
+            "title": "Adidas Yeezy Boost 350 V2 Black Reflectives",
+            "cover": "./images/blackref.png",
+            "description": "Static Black 3M Reflective colorway",
+            "price": "$700",
+            "priceCategory": "$400+",
+            "category": "Yeezy 350",
+            "id": "shoebox8",
+            "url": "https://stockx.com/adidas-yeezy-boost-350-v2-static-black-reflective"
+        },
+        {
+            "title": "Adidas Yeezy Boost 500 Salt",
+            "cover": "./images/salt.png",
+            "description": "Salt suede colorway",
+            "price": "$280",
+            "priceCategory": "$200-$300",
+            "category": "Yeezy 500",
+            "id": "shoebox9",
+            "url": "https://stockx.com/adidas-yeezy-500-salt"
+        },
+        {
+            "title": "Adidas Yeezy Boost 500 Stone",
+            "cover": "./images/stone.png",
+            "description": "Stone suede colorway",
+            "price": "$280",
+            "priceCategory": "$200-$300",
+            "category": "Yeezy 500",
+            "id": "shoebox10",
+            "url": "https://stockx.com/adidas-yeezy-500-stone"
+        },
+        {
+            "title": "Adidas Yeezy Boost 500 Utility black",
+            "cover": "./images/black500.png",
+            "description": "Utility Black Suede Colorway",
+            "price": "$440",
+            "priceCategory": "$400+",
+            "category": "Yeezy 500",
+            "id": "shoebox11",
+            "url": "https://stockx.com/adidas-yeezy-500-utility-black"
+        },
+        {
+            "title": "Adidas Yeezy Boost 500 High Slate",
+            "cover": "./images/highslate.png",
+            "description": "Slate neoprene and suede colorway",
+            "price": "$199",
+            "priceCategory": "$0-$200",
+            "category": "Yeezy 500",
+            "id": "shoebox12",
+            "url": "https://stockx.com/adidas-yeezy-500-high-slate"
+        },
+        {
+            "title": "Adidas Yeezy Boost 500 Blush",
+            "cover": "./images/blush.png",
+            "description": "Blush Seude Colorway",
+            "price": "$360",
+            "priceCategory": "$300-$400",
+            "category": "Yeezy 500",
+            "id": "shoebox13",
+            "url": "https://stockx.com/adidas-yeezy-500-blush"
+        },
+        {
+            "title": "Adidas Yeezy Boost 500 Soft Vision",
+            "cover": "./images/soft.png",
+            "description": "Soft Vision Seude Colorway",
+            "price": "$270",
+            "priceCategory": "$200-$300",
+            "category": "Yeezy 500",
+            "id": "shoebox14",
+            "url": "https://stockx.com/adidas-yeezy-500-soft-vision"
+        },
+        {
+            "title": "Adidas Yeezy Boost 500 Moon",
+            "cover": "./images/moon.png",
+            "description": "Super Moon Yellow Suede colorway",
+            "price": "$250",
+            "priceCategory": "$200-$300",
+            "category": "Yeezy 500",
+            "id": "shoebox15",
+            "url": "https://stockx.com/adidas-yeezy-500-desert-rat-moon-yellow"
+        },
+        {
+            "title": "Adidas Yeezy Boost 500 Bone",
+            "cover": "./images/bone.png",
+            "description": "Bone White Suede colorway",
+            "price": "$360",
+            "priceCategory": "$300-$400",
+            "category": "Yeezy 500",
+            "id": "shoebox16",
+            "url": "https://stockx.com/adidas-yeezy-boost-500-bone-white"
+        },
+        {
+            "title": "Adidas Yeezy Boost 700 V3 Azael",
+            "cover": "./images/azael.png",
+            "description": "Azael glow in dark Colorway",
+            "price": "$600",
+            "priceCategory": "$600",
+            "category": "Yeezy 700",
+            "id": "shoebox17",
+            "url": "https://stockx.com/adidas-yeezy-boost-700-v3-azael"
+        },
+        {
+            "title": "Adidas Yeezy Boost 700 Wave Runner",
+            "cover": "./images/wave.png",
+            "description": "Sold Grey Chalk White Colorway",
+            "price": "$480",
+            "priceCategory": "$400+",
+            "category": "Yeezy 700",
+            "id": "shoebox18",
+            "url": "https://stockx.com/adidas-yeezy-wave-runner-700-solid-grey"
+        },
+        {
+            "title": "Adidas Yeezy Boost 700 Salt",
+            "cover": "./images/salt700.png",
+            "description": "Salt Colorway",
+            "price": "$240",
+            "priceCategory": "$200-$300",
+            "category": "Yeezy 700",
+            "id": "shoebox19",
+            "url": "https://stockx.com/adidas-yeezy-boost-700-salt"
+        },
+        {
+            "title": "Adidas Yeezy Boost 700 Utility Black",
+            "cover": "./images/black700.png",
+            "description": "Utility Black, Gum sole colorway",
+            "price": "$360",
+            "priceCategory": "$300-$400",
+            "category": "Yeezy 700",
+            "id": "shoebox20",
+            "url": "https://stockx.com/adidas-yeezy-boost-700-utility-black"
+        },
+        {
+            "title": "Adidas Yeezy Boost 700 Carbon Blue",
+            "cover": "./images/carbon.png",
+            "description": "Carbon Blue colorway",
+            "price": "$350",
+            "priceCategory": "$300-$400",
+            "category": "Yeezy 700",
+            "id": "shoebox21",
+            "url": "https://stockx.com/adidas-yeezy-boost-700-carbon-blue"
+        },
+        {
+            "title": "Adidas Yeezy Boost 700 Analog",
+            "cover": "./images/analog.png",
+            "description": "Analog colorway",
+            "price": "$240",
+            "priceCategory": "$200-$300",
+            "category": "Yeezy 700",
+            "id": "shoebox22",
+            "url": "https://stockx.com/adidas-yeezy-boost-700-analog"
+        },
+        {
+            "title": "Adidas Yeezy Boost 700 Inertia",
+            "cover": "./images/inertia.png",
+            "description": " Grey Inertia colorway",
+            "price": "$290",
+            "priceCategory": "$200-$300",
+            "category": "Yeezy 700",
+            "id": "shoebox23",
+            "url": "https://stockx.com/adidas-yeezy-boost-700-inertia"
+        },
+        {
+            "title": "Adidas Yeezy Boost 700 Magnet",
+            "cover": "./images/magnet.png",
+            "description": "Magnet colorway",
+            "price": "$330",
+            "priceCategory": "$200-$300",
+            "category": "Yeezy 700",
+            "id": "shoebox24",
+            "url": "https://stockx.com/adidas-yeezy-boost-700-magnet"
+        }
+
+    ]
