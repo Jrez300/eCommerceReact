@@ -13,7 +13,7 @@ class Products extends Component{
 
     <div className="Products" >
       <Navbar />
-      <Filter  />
+      <Filter />
       <Footer />
     </div>
 

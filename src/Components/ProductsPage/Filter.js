@@ -12,25 +12,10 @@ class Filter extends Component {
 }
 
 //Product Filter Function
-yeezy350 = () =>{
+
+yeezyFilter = (shoeType) =>{
     this.setState (state => {
-        const newProducts = state.initialProducts.filter(value => value.category.includes('350')  );
-        return{
-            newProducts
-        }
-    })
-}
-yeezy500 = () =>{
-    this.setState (state => {
-        const newProducts = state.initialProducts.filter(value => value.category.includes('500')  );
-        return{
-            newProducts
-        }
-    })
-}
-yeezy700 = () =>{
-    this.setState (state => {
-        const newProducts = state.initialProducts.filter(value => value.category.includes('700')  );
+        const newProducts = state.initialProducts.filter(value => value.category.includes(shoeType)  );
         return{
             newProducts
         }
@@ -38,9 +23,9 @@ yeezy700 = () =>{
 }
 
 //Price fillter Function
-twoHundred= () =>{
+yeezyPrice= (price) =>{
     this.setState (state => {
-        const newProducts = state.initialProducts.filter(value => value.priceCategory.includes('$0-$200')  );
+        const newProducts = state.initialProducts.filter(value => value.priceCategory.includes(price)  );
         return{
             newProducts
         }
@@ -90,21 +75,21 @@ reset= () =>{
 <h2 className="styles">Styles</h2>
 <div className="filters">
 
-<button   type='button' onClick={() => this.yeezy350()}>Yeezy 350</button>
+<button   type='button' onClick={() => this.yeezyFilter('350')}>Yeezy 350</button>
 
-<button  type='button' onClick={() => this.yeezy500()}>Yeezy 500</button>
+<button  type='button' onClick={() => this.yeezyFilter('500')}>Yeezy 500</button>
 
-<button type='button' onClick={() => this.yeezy700()}>Yeezy 700</button>
+<button type='button' onClick={() => this.yeezyFilter('700')}>Yeezy 700</button>
 </div>
 <div className="price-filters">
 
-<button   type='button' onClick={() => this.twoHundred()}>$0-$200</button>
+<button   type='button' onClick={() => this.yeezyPrice("$0-$200")}>$0-$200</button>
 
-<button  type='button' onClick={() => this.threeHundred()}>$200-$300</button>
+<button  type='button' onClick={() => this.yeezyPrice("$200-$300")}>$200-$300</button>
 
-<button type='button' onClick={() => this.fourHundred()}>$300-$400</button>
+<button type='button' onClick={() => this.yeezyPrice("$300-$400")}>$300-$400</button>
 
-<button type='button' onClick={() => this.aboveHundred()}>$400+</button>
+<button type='button' onClick={() => this.yeezyPrice("$400+")}>$400+</button>
 
 <br/>
 
