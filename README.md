@@ -1,4 +1,4 @@
-Netlify link: github.com/Jrez300/eCommerceReact
+Netlify link: https://ecommerceinreact.netlify.app
 
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
