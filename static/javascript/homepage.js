@@ -1,5 +1,3 @@
-
-
 var slideIndex = 0; //defining the index as 0
 
 
@@ -19,7 +17,7 @@ function carousel() { //creating the function that will make images changes
     slideIndex = 1} //if the slideIndex is larger than amount of slides in mySlides (4 slides), slideIndex turns into 1 
 
   x[slideIndex-1].style.display = "block"; // mySlides[new slideIndex - 1] display block, meaning this is the current image showing. If the statement above is true, slideIndex turns into 1, mySlide[1-1] equals 0, restarts image back at index 0.
-  setTimeout(carousel, 7000); // Change image every 7 seconds
+  setTimeout(carousel, 5000); // Change image every 7 seconds
 }
 
 

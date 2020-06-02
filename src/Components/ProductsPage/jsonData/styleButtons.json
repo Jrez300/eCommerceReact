@@ -1,0 +1,20 @@
+[
+    {
+        "id": 1,
+        "filterFilterString": "350",
+        "buttonName": "Yeezy 350"
+    },
+    {
+        "id": 2,
+        "filterFilterString": "500",
+        "buttonName": "Yeezy 500"
+    },
+    {
+        "id": 3,
+        "filterFilterString": "700",
+        "buttonName": "Yeezy 700"
+    }
+
+
+
+]
