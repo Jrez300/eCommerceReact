@@ -1,7 +1,7 @@
 html,
     body {
-        max-width: 800px;
-        width: 800px;
+        max-width: 770px;
+        width: 770px;
         font-family: "Montserrat", sans-serif;
         margin: 0;
         background-color: black;
@@ -9,7 +9,7 @@ html,
       }
 
       .container {
-        max-width: 800px;
+        max-width: 770px;
         display: grid;
         grid-template-columns:  1fr 1fr 1fr 1fr ;
         grid-template-rows: 80px 70px  ;
@@ -21,10 +21,10 @@ html,
         color: #BFBDB3;
      }
     .container-filters {
-        max-width: 800px;
+        max-width: 770px;
         display: grid;
         grid-template-columns:  1fr 1fr 1fr 1fr ;
-        grid-template-rows:  70px 35px 30px 35px 40px 60px 60px;
+        grid-template-rows:  90px 25px 45px 25px 40px 60px 60px;
         grid-template-areas:
         ". header header ."
         ". styles styles ."

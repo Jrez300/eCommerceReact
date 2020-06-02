@@ -1,14 +1,14 @@
 html,
  body {
-  max-width: 800px;
-  width: 800px;
+  max-width: 775px;
+ 
   font-family: "Montserrat", sans-serif;
   margin: 0;
   background-color: black;
   /*background-color: #EFEEED;*/
 }
  .container {
-    max-width: 800px;
+    max-width:  775px;
      width: 100%;
      display: grid;
      grid-template-columns: 1fr 1fr 1fr 1fr ;
@@ -23,7 +23,7 @@ html,
         
  }
  .container2 {
-  max-width: 800px;
+  max-width:  775px;
    width: 100%;
    display: grid;
    grid-template-columns: 1fr 1fr 1fr 1fr ;
@@ -333,3 +333,87 @@ html,
 
 } 
  
+@media only screen and (max-width: 400px) {
+  html,
+  body {
+     
+      max-width: 400px;
+        width: 100%;
+        font-family: "Montserrat", sans-serif;
+        margin: 0;
+        background-color: black;
+       
+    }
+  .container {
+    width: 100%;
+    max-width: 400px;
+      display: grid;
+      grid-template-columns: 1fr 1fr 1fr 1fr ;
+      grid-template-rows: 90px 150px 15px  ;
+      grid-template-areas: 
+      "logo . . search"
+      "navbar navbar navbar navbar"
+      "shipping shipping shipping shipping"
+      ;
+      justify-items: center;
+      color: #BFBDB3;
+      margin-left:auto;
+      margin-right:auto;
+  }
+  .container2 {
+    width: 100%;
+    max-width: 400px;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr ;
+    grid-template-rows: 300px 150px 450px 950px 100px;
+    grid-template-areas: 
+    
+    ". hero hero ."
+    ". statement statement ."
+    ". new new ."
+    "weekpicks weekpicks weekpicks weekpicks"
+    "footer footer footer footer";
+    justify-items: center;
+    color: #BFBDB3;
+    margin-left:auto;
+    margin-right:auto;
+}
+.navbar {
+  width: 400px;
+  grid-area: navbar;
+}
+.navbar ul{
+  padding-left: 0px;
+}
+.search {
+  max-width: 150px;
+  margin-left:75px;
+    grid-area:search;
+    display: grid;
+    grid-template-areas: 
+    "searchbar cart";
+}
+  .weekpicks {
+  display: grid;
+  grid-area:weekpicks;
+  grid-template-areas:
+  ". featured ."
+  ". pic3 ."
+  ". pic4 ."
+  ". pic5 .";
+  color: #BFBDB3;
+  text-align: center;
+  width: 100%;
+  }
+  .statement {
+    grid-area: statement;
+    color: #EB0E0E;
+    text-align: center;
+    width: 300px;
+}
+.new img{
+  width: 350px;
+}
+
+
+} 

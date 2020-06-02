@@ -6,7 +6,7 @@ class Filter extends Component {
         super(props);
     this.state = {
         initialProducts: require('../ProductsPage/products.json'),
-        newProducts: require('../ProductsPage/products.json')
+        newProducts: require('../ProductsPage/products.json'),
         
     }
 }
@@ -31,7 +31,7 @@ yeezyPrice= (price) =>{
         }
     })
 }
-
+//RESET Function 
 reset= () =>{
     this.setState (state => {
         const newProducts = state.initialProducts;

@@ -1,14 +1,15 @@
 html,
     body {
         width: 775px;
+        max-width: 100%;
         font-family: "Montserrat", sans-serif;
         margin: 0;
         background-color: black;
         /*background-color: #EFEEED;*/
       }
     .container {
-        width: 800px;
-        width: 100%;
+        width: 775px;
+      width: 100%;
         display: grid;
         grid-template-columns: 1fr 1fr 1fr 1fr;
         grid-template-rows: 80px 80px ;
@@ -18,7 +19,7 @@ html,
         
     }
     .container2 {
-      width: 800px;
+      width: 775px;
       display: grid;
       grid-template-columns: 1fr 1fr 1fr 1fr;
       grid-template-rows: 750px 150px ;
@@ -115,7 +116,7 @@ html,
     grid-area: contactform;
     width: 400px;
     align-self: center;
-    /* max-width: 800px; */
+    margin-left: 0px;
     
 }
 
@@ -332,7 +333,6 @@ html,
   .container {
     width: 100%;
     max-width: 400px;
-    
       display: grid;
       grid-template-columns: 1fr 1fr 1fr 1fr ;
       grid-template-rows: 90px 70px 10px  ;
@@ -368,13 +368,27 @@ html,
   grid-area: contactform;
   max-width: 240px;
   align-items: center;
+  margin-right: 0px;
+  
   
 }
 .navbar {
   width: 400px;
   grid-area: navbar;
 }
+.navbar ul{
+  padding-left: 0px;
+}
+.search {
+  max-width: 150px;
+  margin-left:75px;
+    grid-area:search;
+    display: grid;
+    grid-template-areas: 
+    "searchbar cart";
+}
 
 
 }
+
 
