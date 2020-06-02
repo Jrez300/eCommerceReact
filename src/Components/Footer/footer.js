@@ -9,9 +9,9 @@ class Footer extends Component {
                     <nav className="footernav">
                         <ul>
 
-                            <li><a href="https://www.facebook.com/adidasyeezy/" target="_blank"><img src={require('../../images/Facebook.webp')} alt="fb" /></a></li>
-                            <li><a href="https://www.instagram.com/yeezymafia/?hl=en" target="_blank"><img src={require('../../images/ig.webp')} alt="ig" /></a></li>
-                            <li><a href="https://twitter.com/theyeezymafia?ref_src=twsrc%5Egoogle%7Ctwcamp%5Eserp%7Ctwgr%5Eauthor" target="_blank"><img
+                            <li><a href="https://www.facebook.com/adidasyeezy/" target="_blank" rel="noopener noreferrer"><img src={require('../../images/Facebook.webp')} alt="fb" /></a></li>
+                            <li><a href="https://www.instagram.com/yeezymafia/?hl=en" target="_blank" rel="noopener noreferrer"><img src={require('../../images/ig.webp')} alt="ig" /></a></li>
+                            <li><a href="https://twitter.com/theyeezymafia?ref_src=twsrc%5Egoogle%7Ctwcamp%5Eserp%7Ctwgr%5Eauthor" target="_blank"  rel="noopener noreferrer"><img
                                 src={require('../../images/twitter.webp')} alt="twitter"/></a></li>
                         </ul>
                         <p>&copy; All Rights Reserved </p>

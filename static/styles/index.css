@@ -73,6 +73,7 @@ html,
     list-style-type: none;
     margin: 0;
     padding-top:30px;
+    margin-right: 0px;
     text-align: center;
   }
   
@@ -148,7 +149,7 @@ html,
     ". pic5 pic5 .";
     color: #BFBDB3;
     text-align: center;
-    width: 800px;
+    width: 750px;
 }
 
 
@@ -333,11 +334,11 @@ html,
 
 } 
  
-@media only screen and (max-width: 400px) {
+@media only screen and (max-width: 375px) {
   html,
   body {
      
-      max-width: 400px;
+      max-width: 375px;
         width: 100%;
         font-family: "Montserrat", sans-serif;
         margin: 0;
@@ -346,7 +347,7 @@ html,
     }
   .container {
     width: 100%;
-    max-width: 400px;
+    max-width: 375px;
       display: grid;
       grid-template-columns: 1fr 1fr 1fr 1fr ;
       grid-template-rows: 90px 150px 15px  ;
@@ -362,7 +363,7 @@ html,
   }
   .container2 {
     width: 100%;
-    max-width: 400px;
+    max-width: 375px;
     display: grid;
     grid-template-columns: 1fr 1fr 1fr 1fr ;
     grid-template-rows: 300px 150px 450px 950px 100px;
@@ -392,6 +393,11 @@ html,
     display: grid;
     grid-template-areas: 
     "searchbar cart";
+}
+
+.hero img {
+  width: 375px;
+  height:375px;
 }
   .weekpicks {
   display: grid;

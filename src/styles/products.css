@@ -1,7 +1,7 @@
 html,
     body {
-        max-width: 770px;
-        width: 770px;
+        max-width: 750px;
+        width: 750px;
         font-family: "Montserrat", sans-serif;
         margin: 0;
         background-color: black;
@@ -9,7 +9,7 @@ html,
       }
 
       .container {
-        max-width: 770px;
+        max-width: 750px;
         display: grid;
         grid-template-columns:  1fr 1fr 1fr 1fr ;
         grid-template-rows: 80px 70px  ;
@@ -21,7 +21,7 @@ html,
         color: #BFBDB3;
      }
     .container-filters {
-        max-width: 770px;
+        max-width: 750px;
         display: grid;
         grid-template-columns:  1fr 1fr 1fr 1fr ;
         grid-template-rows:  90px 25px 45px 25px 40px 60px 60px;
@@ -647,6 +647,7 @@ ol {
 }
 .button:focus{background-color:red;} 
 
+/* DESKTOP */
 @media only screen and (min-width: 800px)  {
     html,
     body {
@@ -728,4 +729,56 @@ ol {
         grid-area: searchbar;
        }
 
+}
+/* MOBILE*/
+@media only screen and (max-width: 400px) {
+  html,body {
+    max-width: 400px;
+    width: 400px;
+    font-family: "Montserrat", sans-serif;
+    margin: 0;
+    background-color: black;
+    /*background-color: #EFEEED;*/
+  }
+
+  .container {
+    max-width: 400px;
+    display: grid;
+    grid-template-columns:  1fr 1fr 1fr 1fr ;
+    grid-template-rows: 80px 30px 70px  ;
+    grid-template-areas:
+    "logo . . search " /*60px*/
+    ". . . ."
+    "navbar navbar navbar navbar"
+    ;
+    justify-items: center;
+    color: #BFBDB3;
+ }
+.container-filters {
+    max-width: 400px;
+    display: grid;
+    grid-template-columns:  1fr 1fr 1fr 1fr ;
+    grid-template-rows:  90px 25px 45px 25px 40px 60px 60px;
+    grid-template-areas:
+    ". header header ."
+    ". styles styles ."
+    "filters filters filters filters "
+    ". prices prices ."
+    "price-filters price-filters price-filters price-filters "
+    "reset reset reset reset"
+    " . . . . " /*100px*/
+    ;
+    justify-items: center;
+    color: #BFBDB3;
+   
+    
+}
+
+.posts {
+  max-width: 800px;
+  display: grid;
+  grid-template-columns:  400px ;
+  justify-items: center;
+  color: #BFBDB3;
+}
 }

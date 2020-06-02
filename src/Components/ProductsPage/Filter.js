@@ -7,6 +7,8 @@ class Filter extends Component {
     this.state = {
         initialProducts: require('../ProductsPage/products.json'),
         newProducts: require('../ProductsPage/products.json'),
+        filterProducts:'',
+        filterPrice:''
         
     }
 }
@@ -23,14 +25,23 @@ yeezyFilter = (shoeType) =>{
 }
 
 //Price fillter Function
-yeezyPrice= (price) =>{
+yeezyPrice = (price) =>{
     this.setState (state => {
-        const newProducts = state.initialProducts.filter(value => value.priceCategory.includes(price)  );
+        const newProducts = state.initialProducts.filter(value => value.priceCategory.includes(price));
         return{
             newProducts
         }
     })
 }
+
+
+// yeezyFilter = () => {
+//     const products = state.initialProducts.filter(value => value.category.includes(this.state.filterProducts) && value.priceCategory.includes(this.state.filterPrice));
+//     this.setState({products:products}) 
+// }
+
+
+
 //RESET Function 
 reset= () =>{
     this.setState (state => {
@@ -40,6 +51,8 @@ reset= () =>{
         }
     })
 }
+
+
    
     render(){
     

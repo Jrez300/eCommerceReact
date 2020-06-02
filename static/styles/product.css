@@ -1,7 +1,7 @@
 html,
     body {
-        max-width: 800px;
-        width: 800px;
+        max-width: 775px;
+        width: 775px;
         font-family: "Montserrat", sans-serif;
         margin: 0;
         background-color: black;
@@ -9,14 +9,15 @@ html,
       }
 
       .container {
-        max-width: 800px;
+        max-width: 775px;
+        width: 100%;
         display: grid;
         grid-template-columns:  1fr 1fr 1fr 1fr ;
-        grid-template-rows: 80px 60px 30px 60px 80px 100px;
+        grid-template-rows: 80px 80px 30px 60px 80px 100px;
         grid-template-areas:
         "logo . . search " /*60px*/
         "navbar navbar navbar navbar"
-        ". header header ."
+        "header header header header"
         ". . . ."
         "filters filters filters filters "
         "price-filters price-filters price-filters price-filters"
@@ -27,7 +28,7 @@ html,
     }
   
     .posts {
-        max-width: 800px;
+        max-width: 775px;
         display: grid;
         grid-template-columns:  400px 400px ;
         justify-items: center;
