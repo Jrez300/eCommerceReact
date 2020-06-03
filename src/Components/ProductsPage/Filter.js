@@ -13,9 +13,6 @@ class Filter extends Component {
             styleButtons: styleButtons,
             priceButtons: priceButtons
 
-            // filterProducts:'',
-            // filterPrice:''
-
         }
     }
 
@@ -67,7 +64,6 @@ class Filter extends Component {
                     <h1 className="header">Yeezy Inventory</h1>
 
                     <h2 className="styles">Style</h2>
-
                     <div className="filters">
                         {this.state.styleButtons.map((value) => {
                             return (
@@ -77,7 +73,6 @@ class Filter extends Component {
                     </div>
 
                     <h2 className="prices">Price</h2>
-
                     <div className="price-filters">
                         {this.state.priceButtons.map((value) => {
                             return (

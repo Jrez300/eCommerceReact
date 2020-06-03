@@ -13,6 +13,7 @@ function carousel() { //creating the function that will make images changes
 
   slideIndex++; //slideIndex increases count by 1, initially declared as 0
 
+  //RUN CONDITIONAL STATEMENT 
   if (slideIndex > x.length)  {
     slideIndex = 1} //if the slideIndex is larger than amount of slides in mySlides (4 slides), slideIndex turns into 1 
 
