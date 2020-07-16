@@ -16,94 +16,31 @@ class Filter extends Component {
         }
     }
 
-    // const {NewFilterproducts, NewPriceproducts} = this.state;
-    // let displayedProducts = productlist.map((value)=>{
-
-    //     if (NewFilterproducts === '' && NewPriceproducts === '') {
-    //         return <Oldproducts value={value}/>
-    //     }
-    //     if (NewFilterproducts !== '' && NewPriceproducts !== '') {
-    //         if (NewFilterproducts === value.NewFilterproducts && NewPriceproducts === value.NewPriceproducts){
-    //             return <Oldproducts value={value}/>
-    //         }
-    //     }
-    //     if (NewFilterproducts !== '' && NewPriceproducts === '') {
-    //         if (NewFilterproducts === value.NewFilterproducts){
-    //             return <Oldproducts value={value}/>
-    //         }
-    //     }
-    //     if (NewFilterproducts === '' && NewPriceproducts !== '') {
-    //         if (NewPriceproducts === value.NewPriceproducts){
-    //             return <Oldproducts value={value}/>
-    //         }
-    //     }
-
-
-        
-    // });
-
-
-    yeezyAllFilters = (shoeType, price) =>{
-         let Newproducts=[...Oldproducts]
-        if (
-             this.setState(state => {
-                
-                  Newproducts = state.Oldproducts.filter(value => value.category.includes(shoeType))
-
-                 return {
-                     Newproducts
-                 }
-                 
-             }));
-
-        else if (
-                this.setState(state => {
-                   
-                     Newproducts = state.Oldproducts.filter(value => value.category.includes(price))
-   
-                    return {
-                        Newproducts
-                    }
-                    
-                }));
-         
-            // this.setState(state => {
-            //      Newproducts = state.Oldproducts.filter(value => value.priceCategory.includes(price));
-            //     return {
-            //         Newproducts
-            //     }
-            // })
-
-        
-        
-        
-    }
-
     // Product Filter Function
 
-    // yeezyFilter = (shoeType) => {
-    //    let Newproducts=[...Oldproducts]
-    //     this.setState(state => {
-    //          Newproducts = state.Oldproducts.filter(value => value.category.includes(shoeType));
-    //         return {
-    //             Newproducts
-    //         }
+    yeezyFilter = (shoeType) => {
+       let Newproducts=[...Oldproducts]
+        this.setState(state => {
+             Newproducts = state.Oldproducts.filter(value => value.category.includes(shoeType));
+            return {
+                Newproducts
+            }
             
-    //     })
-    // }
+        })
+    }
 
 
-    // //Price fillter Function
-    // yeezyPrice = (price) => {
-    //     let Newproducts=[...Oldproducts]
-    //     this.setState(state => {
-    //          Newproducts = state.Oldproducts.filter(value => value.priceCategory.includes(price));
-    //         return {
-    //             Newproducts
-    //         }
-    //     })
+    //Price fillter Function
+    yeezyPrice = (price) => {
+        let Newproducts=[...Oldproducts]
+        this.setState(state => {
+             Newproducts = state.Oldproducts.filter(value => value.priceCategory.includes(price));
+            return {
+                Newproducts
+            }
+        })
         
-    // }
+    }
     //RESET Function 
     reset = () => {
         let Newproducts=[...Oldproducts]
@@ -141,7 +78,7 @@ class Filter extends Component {
                     <div className="filters">
                         {this.state.styleButtons.map((value) => {
                             return (
-                                <button type='button' onClick={() => this.yeezyAllFilters(value.filterFilterString)}> {value.buttonName} </button>
+                                <button type='button' onClick={() => this.yeezyFilter(value.filterFilterString)}> {value.buttonName} </button>
                             )
                         })}
                     </div>
@@ -150,7 +87,7 @@ class Filter extends Component {
                     <div className="price-filters">
                         {this.state.priceButtons.map((value) => {
                             return (
-                                <button type='button' onClick={() => this.yeezyAllFilters(value.priceFilterString)}>{value.buttonName}</button>
+                                <button type='button' onClick={() => this.yeezyPrice(value.priceFilterString)}>{value.buttonName}</button>
                             )
                         })}
                     </div>
