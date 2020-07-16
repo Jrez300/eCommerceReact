@@ -20,6 +20,23 @@ html,
         justify-items: center;
         color: #BFBDB3;
      }
+     .container2 {
+      max-width:  775px;
+       width: 100%;
+       display: grid;
+       grid-template-columns: 1fr 1fr 1fr 1fr ;
+          grid-template-rows:  80px 300px 150px 550px 700px 100px;
+          grid-template-areas: 
+          "shipping shipping shipping shipping"
+          ". hero hero ."
+          ". statement statement ."
+          ". new new ."
+          ". weekpicks weekpicks ."
+          ". footer footer .";
+          justify-items: center;
+          color: #BFBDB3;
+          
+    }
     .container-filters {
         max-width: 750px;
         display: grid;
@@ -127,6 +144,84 @@ html,
         grid-area: searchbar;
       }
         
+      .shipping h1{
+        font-weight: bold;
+        font-size: 16px;
+      }
+    .shipping {
+        grid-area: shipping;
+        color: white;
+        font-weight: bold;
+        font-size: 16px;
+        text-align: center;
+    }
+
+    .hero {
+      grid-area: hero;
+  }
+  .hero img {
+      width: 600px;
+      height:350px;
+  }
+  
+  .statement h2 {
+    font-weight: bold;
+    line-height: 25px;
+    font-size: 16px;
+  }
+  .statement {
+      grid-area: statement;
+      color: #EB0E0E;
+      text-align: center;
+      width: 570px;
+  }
+  
+  .new {
+      grid-area: new;
+      color: #BFBDB3;
+      text-align: center;
+      width: 500px;
+      height: 300px;
+  }
+  
+  .new img{
+      width: 400px;
+  }
+  .weekpicks {
+      display: grid;
+      grid-area:weekpicks;
+      grid-template-areas:
+      "featured featured featured featured"
+      "pic3 pic3 pic4 pic4"  
+      ". pic5 pic5 .";
+      color: #BFBDB3;
+      text-align: center;
+      width: 750px;
+  }
+  
+  
+  .featured {
+    width: 100%;
+  }
+  
+  .featured {
+      grid-area: featured;
+  }
+  .pic3 {
+      grid-area: pic3;
+  }
+  .pic4 {
+      grid-area: pic4;
+  }
+  .pic5 {
+      grid-area: pic5;
+  }
+  
+  .weekpicks img {
+      width: 300px;
+  }
+    
+    
     .search img {
         grid-area: cart;
         height:25px;
@@ -530,6 +625,7 @@ html,
   list-style-type: none;
   margin: 0;
   padding-top:30px;
+  padding-left: 0px;
   text-align: center;
 }
 
@@ -648,6 +744,104 @@ ol {
 }
 .button:focus{background-color:red;} 
 
+/*CONTACT STYLING*/
+
+.header {
+  text-align: center;
+  margin-bottom:30px;
+  width:100%;
+  color: #fdf7db;
+  font-size: 40px;
+  
+}
+.contact-container{
+  display: grid;
+  margin-left: auto;
+  margin-right: auto;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  grid-template-rows:  1fr;
+  grid-template-areas: 
+  '. form form .'
+  ;
+}
+
+.contactform {
+  max-width: 500px;
+  width:100%;
+  color: #BFBDB3;
+  align-items: center;
+    font-weight: bold;
+    display: grid;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 30px;
+    grid-area: form;
+  
+
+}
+
+
+
+.contactform input, select, textarea {
+    background-color: #BFBDB3;
+    width: 100%;
+    padding: 10px;  
+    box-sizing: border-box; 
+    margin-top: 5px; 
+    margin-bottom: 15px; 
+}
+.submitbuttonContainer{
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 15px;
+  margin-bottom: 20px;
+    }
+  
+    .submitbutton {
+      padding: 10px;
+      background: #BFBDB3;
+      color:black;
+      letter-spacing: 2px;
+      text-decoration: none;
+      font-weight: bold;
+      border-radius: 25px;
+      border-color: white;
+      cursor: pointer;
+      text-align: center;
+      outline: none;
+      
+    }
+    .submitbutton:hover{
+      background-color: #EB0E0E; 
+      color: black;
+      border-radius: 25px;
+      transition-duration: 0.5s;
+    }
+  
+
+    .BrainhubCarousel__arrows {
+      position: relative;
+      border: none;
+      overflow: hidden;
+      outline: 0;
+      font-size: 0;
+      line-height: 0;
+      background-color: #EB0E0E
+    }
+    .BrainhubCarousel__arrows span{
+      border-color: black;
+    }
+    .BrainhubCarousel__arrows:hover:enabled {
+      background-color: #EB0E0E;
+    }
+    .BrainhubCarousel__arrows:hover:enabled span{
+            border-color: black;
+
+    }
+    .BrainhubCarousel{
+      padding-top:0px;
+    }
+
 /* DESKTOP */
 @media only screen and (min-width: 800px)  {
     html,
@@ -674,6 +868,25 @@ ol {
         margin-left:auto;
         margin-right:auto;
     }
+    .container2 {
+      width: 100%;
+      max-width: 1700px;
+      min-width: 900px;
+      display: grid;
+      grid-template-columns: 1fr 1fr 1fr 1fr ;
+      grid-template-rows: 50px 300px 150px 500px 400px 100px;
+      grid-template-areas: 
+      ". shipping shipping ."
+      ". hero hero ."
+      ". statement statement ."
+      ". new new ."
+      "weekpicks weekpicks weekpicks weekpicks"
+      ". footer footer .";
+      justify-items: center;
+      color: #BFBDB3;
+      margin-left:auto;
+      margin-right:auto;
+  }
     .container-filters {
         width: 100%;
         max-width: 1700px;
@@ -710,6 +923,7 @@ ol {
         list-style-type: none;
         margin: 0;
         padding-top:30px;
+        
         text-align: center;
        }
     .navbar li {
@@ -729,6 +943,23 @@ ol {
         height: 20px;
         grid-area: searchbar;
        }
+       .weekpicks {
+        display: grid;
+        grid-area:weekpicks;
+        grid-template-areas:
+        ". featured ."
+        "pic3 pic4 pic5";
+        color: #BFBDB3;
+        text-align: center;
+        width: 100%;
+        }
+        .statement {
+          grid-area: statement;
+          color: #EB0E0E;
+          font-weight: bold;
+          line-height: 25px;
+          text-align: center;
+      }
 
 }
 /* MOBILE*/
@@ -755,11 +986,29 @@ ol {
     justify-items: center;
     color: #BFBDB3;
  }
+ .container2 {
+  width: 100%;
+  max-width: 375px;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr ;
+  grid-template-rows: 15px 300px 150px 450px 950px 100px;
+  grid-template-areas: 
+  "shipping shipping shipping shipping"
+  ". hero hero ."
+  ". statement statement ."
+  ". new new ."
+  "weekpicks weekpicks weekpicks weekpicks"
+  "footer footer footer footer";
+  justify-items: center;
+  color: #BFBDB3;
+  margin-left:auto;
+  margin-right:auto;
+}
 .container-filters {
     max-width: 400px;
     display: grid;
     grid-template-columns:  1fr 1fr 1fr 1fr ;
-    grid-template-rows:  90px 25px 45px 25px 40px 60px 60px;
+    grid-template-rows:  130px 25px 45px 25px 40px 60px 60px;
     grid-template-areas:
     ". header header ."
     ". styles styles ."
@@ -782,4 +1031,39 @@ ol {
   justify-items: center;
   color: #BFBDB3;
 }
+
+.hero img {
+  width: 375px;
+  height:375px;
+}
+  .weekpicks {
+  display: grid;
+  grid-area:weekpicks;
+  grid-template-areas:
+  ". featured ."
+  ". pic3 ."
+  ". pic4 ."
+  ". pic5 .";
+  color: #BFBDB3;
+  text-align: center;
+  width: 100%;
+  }
+  .statement {
+    grid-area: statement;
+    color: #EB0E0E;
+    text-align: center;
+    width: 300px;
+}
+
+.new {
+  grid-area: new;
+  color: #BFBDB3;
+  text-align: center;
+  width: 300px;
+  height: 300px;
+}
+.new img{
+  width: 230px;
+}
+
 }

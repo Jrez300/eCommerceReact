@@ -1,7 +1,8 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
 
-class NavBar extends React.Component{
-    render(){
+function NavBar(){
+  
         return(
 
 <div className="container">
@@ -13,9 +14,9 @@ class NavBar extends React.Component{
 </header>
 <nav className="navbar">
     <ul>
-        <li><a href="index.html">Home</a></li>
-        <li><a href="product.html">Products</a></li>
-        <li><a href="contact.html">Contact Us</a></li>
+        <li><Link to='/'>Home</Link></li>
+        <li><Link to='/Products'>Products</Link></li>
+        <li><Link to='/Contact'>Contact Us</Link></li>
     </ul>
 </nav>
 
@@ -28,6 +29,6 @@ class NavBar extends React.Component{
         );
 
     }
-}
+
 
 export default NavBar;

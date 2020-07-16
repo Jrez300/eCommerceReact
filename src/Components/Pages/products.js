@@ -1,9 +1,9 @@
 import React, {Component} from 'react';
 import Navbar from "../Navbar/navbar"
 import Footer from '../Footer/footer'
-import '../../styles/products.css'
+import '../../styles/master.css'
 
-import Filter from "./Filter"
+import Filter from "../ProductsContent/Filter"
 
 class Products extends Component{
  
