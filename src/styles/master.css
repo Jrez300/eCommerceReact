@@ -826,16 +826,16 @@ ol {
       outline: 0;
       font-size: 0;
       line-height: 0;
-      background-color: #EB0E0E
+      background-color: black
     }
     .BrainhubCarousel__arrows span{
-      border-color: black;
+      border-color: #EB0E0E;
     }
     .BrainhubCarousel__arrows:hover:enabled {
-      background-color: #EB0E0E;
+      background-color: black;
     }
     .BrainhubCarousel__arrows:hover:enabled span{
-            border-color: black;
+            border-color: #EB0E0E;
 
     }
     .BrainhubCarousel{
